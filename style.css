@@ -6,8 +6,33 @@ body {
 }
 
 h1 {
-    color:yellow; /* Başlık rengi */
+    
     font-size: 24px; /* Başlık yazı tipi boyutu */
     font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+    
 }
+
+h1:hover {animation: color-change 6s infinite;}
+
 h2 {color:pink}
+
+
+@keyframes color-change {
+    0% {
+      color: yellow;
+    }
+  
+    25% {
+      color: pink;
+    }
+  
+    50% {
+      color: blue;
+    }
+    75% {
+        color: pink;
+      }
+    100% {
+        color: yellow;
+      }
+}
